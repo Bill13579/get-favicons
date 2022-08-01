@@ -2,8 +2,6 @@
   "name": "get-favicons",
   "version": "1.0.0",
   "description": "Extract the favicons URLs from a set of HTML head elements.",
-  "main": "from-stream.js",
-  "bin": "./bin/cli.js",
   "scripts": {
     "test": "node test/index.js"
   },
@@ -28,10 +26,6 @@
     "url": "https://github.com/bbc/get-favicons/issues"
   },
   "homepage": "https://github.com/bbc/get-favicons#readme",
-  "dependencies": {
-    "parse-head": "^1.0.0",
-    "yargs": "^4.1.0"
-  },
   "devDependencies": {
     "blue-tape": "^0.2.0"
   }

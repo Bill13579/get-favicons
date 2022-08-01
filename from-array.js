@@ -1,6 +1,5 @@
 'use strict';
 
-const url = require('url');
 const noop = d => d;
 
 const DEFAULT_OPTIONS = {
@@ -90,5 +89,5 @@ function generateBaseUrlMap (options, headers) {
     }
   }
 
-  return !baseUrl ? noop : (icon) => Object.assign(icon, { href: url.resolve(baseUrl, icon.href) });
+  return !baseUrl ? noop : (icon) => Object.assign(icon, { href: new URL(icon.href, baseUrl).href });
 }
